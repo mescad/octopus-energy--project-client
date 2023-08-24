@@ -1,6 +1,38 @@
 @use "../../styles/variables" as *;
 
+.header {
+  background-color: $hemocyanin;
+  display: flex;
+  width: 100%;
+  height: 15vh;
 
-header {
-    background-color: $hemocyanin;
+  &__avatar {
+    &-container {
+      margin-left: 1rem;
+      margin-top: 0.5rem;
+    }
+
+    &-image {
+    }
+  }
+}
+
+.links {
+  &__container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    flex-direction: row;
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  &__links {
+    color: $ice;
+    text-decoration: none;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
 }
