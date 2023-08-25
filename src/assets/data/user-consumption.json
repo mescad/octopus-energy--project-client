@@ -2,62 +2,6 @@
     "data": {
       "smartMeterTelemetry": [
         {
-          "readAt": "2023-08-12T20:25:00+00:00",
-          "consumption": "21924881.90",
-          "consumptionDelta": "0.00",
-          "renewable": "0.00",
-          "non-renewable": "0.00"
-        },
-        {
-          "readAt": "2023-08-12T20:55:00+00:00",
-          "consumption": "21924881.90",
-          "consumptionDelta": "0.00",
-          "renewable": "0.00",
-          "non-renewable": "0.00"
-        },
-        {
-          "readAt": "2023-08-12T21:25:00+00:00",
-          "consumption": "21924881.90",
-          "consumptionDelta": "0.00",
-          "renewable": "0.00",
-          "non-renewable": "0.00"
-        },
-        {
-          "readAt": "2023-08-12T21:55:00+00:00",
-          "consumption": "21924881.90",
-          "consumptionDelta": "0.00",
-          "renewable": "0.00",
-          "non-renewable": "0.00"
-        },
-        {
-          "readAt": "2023-08-12T22:25:00+00:00",
-          "consumption": "21924881.90",
-          "consumptionDelta": "0.00",
-          "renewable": "0.00",
-          "non-renewable": "0.00"
-        },
-        {
-          "readAt": "2023-08-12T22:55:00+00:00",
-          "consumption": "21924881.90",
-          "consumptionDelta": "0.00",
-          "renewable": "0.00",
-          "non-renewable": "0.00"
-        },
-        {
-          "readAt": "2023-08-12T23:25:00+00:00",
-          "consumption": "21924881.90",
-          "consumptionDelta": "0.00",
-          "renewable": "0.00",
-          "non-renewable": "0.00"
-        },
-        {
-          "readAt": "2023-08-12T23:55:00+00:00",
-          "consumption": "21924881.90",
-          "consumptionDelta": "0.00",
-          "renewable": "0.00",
-          "non-renewable": "0.00"
-        },
-        {
           "readAt": "2023-08-13T00:25:00+00:00",
           "consumption": "21924881.90",
           "consumptionDelta": "0.00",
@@ -67,9 +11,9 @@
         {
           "readAt": "2023-08-13T00:55:00+00:00",
           "consumption": "21924881.90",
-          "consumptionDelta": "0.00",
-          "renewable": "0.00",
-          "non-renewable": "0.00"
+          "consumptionDelta": "100.3100",
+          "renewable": "0.70",
+          "non-renewable": "0.30"
         },
         {
           "readAt": "2023-08-13T01:25:00+00:00",
@@ -81,9 +25,9 @@
         {
           "readAt": "2023-08-13T01:55:00+00:00",
           "consumption": "21924881.90",
-          "consumptionDelta": "0.00",
-          "renewable": "0.00",
-          "non-renewable": "0.00"
+          "consumptionDelta": "100.3100",
+          "renewable": "0.70",
+          "non-renewable": "0.30"
         },
         {
           "readAt": "2023-08-13T02:25:00+00:00",
@@ -95,9 +39,9 @@
         {
           "readAt": "2023-08-13T02:55:00+00:00",
           "consumption": "21924881.90",
-          "consumptionDelta": "0.00",
-          "renewable": "0.00",
-          "non-renewable": "0.00"
+          "consumptionDelta": "200.3100",
+          "renewable": "0.70",
+          "non-renewable": "0.30"
         },
         {
           "readAt": "2023-08-13T03:25:00+00:00",
@@ -109,9 +53,9 @@
         {
           "readAt": "2023-08-13T03:55:00+00:00",
           "consumption": "21924881.90",
-          "consumptionDelta": "0.00",
-          "renewable": "0.00",
-          "non-renewable": "0.00"
+          "consumptionDelta": "200.3100",
+          "renewable": "0.70",
+          "non-renewable": "0.30"
         },
         {
           "readAt": "2023-08-13T04:25:00+00:00",
@@ -123,9 +67,9 @@
         {
           "readAt": "2023-08-13T04:55:00+00:00",
           "consumption": "21924881.90",
-          "consumptionDelta": "0.00",
-          "renewable": "0.00",
-          "non-renewable": "0.00"
+          "consumptionDelta": "300.3100",
+          "renewable": "0.70",
+          "non-renewable": "0.30"
         },
         {
           "readAt": "2023-08-13T05:25:00+00:00",
@@ -151,9 +95,9 @@
         {
           "readAt": "2023-08-13T06:55:00+00:00",
           "consumption": "21929168.18",
-          "consumptionDelta": "0.00",
-          "renewable": "0.00",
-          "non-renewable": "0.00"
+          "consumptionDelta": "900.3100",
+          "renewable": "0.40",
+          "non-renewable": "0.60"
         },
         {
           "readAt": "2023-08-13T07:25:00+00:00",
@@ -165,9 +109,9 @@
         {
           "readAt": "2023-08-13T07:55:00+00:00",
           "consumption": "21929168.18",
-          "consumptionDelta": "0.00",
-          "renewable": "0.00",
-          "non-renewable": "0.00"
+          "consumptionDelta": "1300.3100",
+          "renewable": "0.50",
+          "non-renewable": "0.50"
         },
         {
           "readAt": "2023-08-13T08:25:00+00:00",
@@ -179,9 +123,9 @@
         {
           "readAt": "2023-08-13T08:55:00+00:00",
           "consumption": "21929168.18",
-          "consumptionDelta": "0.00",
-          "renewable": "0.00",
-          "non-renewable": "0.00"
+          "consumptionDelta": "400.3100",
+          "renewable": "0.50",
+          "non-renewable": "0.50"
         },
         {
           "readAt": "2023-08-13T09:25:00+00:00",
@@ -193,9 +137,9 @@
         {
           "readAt": "2023-08-13T09:55:00+00:00",
           "consumption": "21929168.18",
-          "consumptionDelta": "0.00",
-          "renewable": "0.00",
-          "non-renewable": "0.00"
+          "consumptionDelta": "300.3100",
+          "renewable": "0.50",
+          "non-renewable": "0.50"
         },
         {
           "readAt": "2023-08-13T10:25:00+00:00",
@@ -207,9 +151,9 @@
         {
           "readAt": "2023-08-13T10:55:00+00:00",
           "consumption": "21929168.18",
-          "consumptionDelta": "0.00",
-          "renewable": "0.00",
-          "non-renewable": "0.00"
+          "consumptionDelta": "400.3100",
+          "renewable": "0.50",
+          "non-renewable": "0.50"
         },
         {
           "readAt": "2023-08-13T11:25:00+00:00",
@@ -221,9 +165,9 @@
         {
           "readAt": "2023-08-13T11:55:00+00:00",
           "consumption": "21929168.18",
-          "consumptionDelta": "0.00",
-          "renewable": "0.00",
-          "non-renewable": "0.00"
+          "consumptionDelta": "1800.3100",
+          "renewable": "0.60",
+          "non-renewable": "0.40"
         },
         {
           "readAt": "2023-08-13T12:25:00+00:00",
@@ -235,9 +179,9 @@
         {
           "readAt": "2023-08-13T12:55:00+00:00",
           "consumption": "21929168.18",
-          "consumptionDelta": "0.00",
-          "renewable": "0.00",
-          "non-renewable": "0.00"
+          "consumptionDelta": "800.3100",
+          "renewable": "0.70",
+          "non-renewable": "0.30"
         },
         {
           "readAt": "2023-08-13T13:25:00+00:00",
@@ -249,9 +193,9 @@
         {
           "readAt": "2023-08-13T13:55:00+00:00",
           "consumption": "21929168.18",
-          "consumptionDelta": "0.00",
-          "renewable": "0.00",
-          "non-renewable": "0.00"
+          "consumptionDelta": "700.3100",
+          "renewable": "0.70",
+          "non-renewable": "0.30"
         },
         {
           "readAt": "2023-08-13T14:25:00+00:00",
@@ -263,9 +207,9 @@
         {
           "readAt": "2023-08-13T14:55:00+00:00",
           "consumption": "21929168.18",
-          "consumptionDelta": "0.00",
-          "renewable": "0.00",
-          "non-renewable": "0.00"
+          "consumptionDelta": "500.3100",
+          "renewable": "0.70",
+          "non-renewable": "0.30"
         },
         {
           "readAt": "2023-08-13T15:25:00+00:00",
@@ -277,9 +221,9 @@
         {
           "readAt": "2023-08-13T15:55:00+00:00",
           "consumption": "21929168.18",
-          "consumptionDelta": "0.00",
-          "renewable": "0.00",
-          "non-renewable": "0.00"
+          "consumptionDelta": "500.3100",
+          "renewable": "0.57",
+          "non-renewable": "0.43"
         },
         {
           "readAt": "2023-08-13T16:25:00+00:00",
@@ -291,9 +235,9 @@
         {
           "readAt": "2023-08-13T16:55:00+00:00",
           "consumption": "21929168.18",
-          "consumptionDelta": "0.00",
-          "renewable": "0.00",
-          "non-renewable": "0.00"
+          "consumptionDelta": "168.3100",
+          "renewable": "0.57",
+          "non-renewable": "0.43"
         },
         {
           "readAt": "2023-08-13T17:25:00+00:00",
@@ -319,9 +263,9 @@
         {
           "readAt": "2023-08-13T18:55:00+00:00",
           "consumption": "21930234.14",
-          "consumptionDelta": "0.00",
-          "renewable": "0.00",
-          "non-renewable": "0.00"
+          "consumptionDelta": "1860.6500",
+          "renewable": "0.64",
+          "non-renewable": "0.36"
         },
         {
           "readAt": "2023-08-13T19:25:00+00:00",
@@ -340,6 +284,13 @@
         {
           "readAt": "2023-08-13T20:25:00+00:00",
           "consumption": "21936472.81",
+          "consumptionDelta": "1860.6500",
+          "renewable": "0.64",
+          "non-renewable": "0.36"
+        },
+        {
+          "readAt": "2023-08-13T20:55:00+00:00",
+          "consumption": "21924881.90",
           "consumptionDelta": "0.00",
           "renewable": "0.00",
           "non-renewable": "0.00"
