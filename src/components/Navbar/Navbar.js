@@ -14,7 +14,7 @@ const Navbar = () => {
         className="links__links" 
         to={"/"}
       >
-        My Insights
+        <b>My Insights</b>
       </Link>
 
 
