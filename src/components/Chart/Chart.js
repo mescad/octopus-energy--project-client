@@ -11,6 +11,7 @@ import {
 import { Bar } from "react-chartjs-2";
 import dataJson from "../../assets/data/user-consumption.json";
 import moment from "moment/moment";
+import "./Chart.scss"
 
 function Chart() {
 	ChartJS.register(
@@ -31,26 +32,25 @@ function Chart() {
 		let renewableData = [];
 		let nonRenewableData = [];
 		usages.forEach((usage) => {
-			console.log(usage);
 			const thisTime = usage.readAt;
 			const consumptionDelta = usage.consumptionDelta;
 			const renewable = consumptionDelta * Number(usage.renewable);
 			const nonRenewable = consumptionDelta * Number(usage["non-renewable"]);
 			const hour = moment(thisTime).hour();
 			const hourIndex = labels.indexOf(hour);
-            const labelLength = labels.length;
-			console.log(hourIndex);
+			const labelLength = labels.length;
 			if (hourIndex === -1) {
 				labels.push(hour);
 				renewableData.push(renewable);
 				nonRenewableData.push(nonRenewable);
 			}
 			if (hourIndex !== -1) {
-                renewableData[labelLength-1] = renewableData[labelLength-1] + renewable;
-                nonRenewableData[labelLength-1] = nonRenewableData[labelLength-1] + nonRenewable;
+				renewableData[labelLength - 1] =
+					renewableData[labelLength - 1] + renewable;
+				nonRenewableData[labelLength - 1] =
+					nonRenewableData[labelLength - 1] + nonRenewable;
 			}
 		});
-		console.log(labels);
 
 		setChartData({
 			labels,
@@ -78,12 +78,26 @@ function Chart() {
 			},
 		},
 		responsive: true,
+        color:"white",
 		scales: {
 			x: {
 				stacked: true,
+				grid: {
+					display: false,
+				},
+                ticks: { color: 'white', beginAtZero: true }
 			},
 			y: {
 				stacked: true,
+                grid: {
+					display: false,
+				},
+                ticks: { color: 'white', beginAtZero: true }
+			},
+		},
+		elements: {
+			bar: {
+				borderRadius: 4,
 			},
 		},
 	};
@@ -92,7 +106,12 @@ function Chart() {
 		return;
 	}
 
-	return <Bar options={options} data={chartData} />;
+	return (
+		<Bar
+			options={options}
+			data={chartData}
+		/>
+	);
 }
 
 export default Chart;
