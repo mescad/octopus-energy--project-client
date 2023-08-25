@@ -11,17 +11,13 @@ const Navbar = () => {
       </div>
       <div className="links__container">
         <Link
-        className={`links__links ${location.pathname === '/' ? 'active' : ''}`}
+        className="links__links" 
         to={"/"}
       >
         My Insights
       </Link>
-      <Link
-        className={`links__links ${location.pathname === '/community' ? 'active' : ''}`}
-        to={"/community"}
-      >
-        My Community
-      </Link>
+
+
       </div>
     </header>
   );
