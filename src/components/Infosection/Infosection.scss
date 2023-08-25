@@ -18,13 +18,15 @@
     &-textcontianer {
     }
     padding-left: 1rem;
+    line-height:1.2;
 
     &-title {
-      @include elementsubtext;
+        font-weight:100;
+        font-style: normal;
     }
 
     &-info {
-      @include elementtitle;
+   
     }
 
    
@@ -37,21 +39,39 @@
     background-color: $hemocyanin;
     width: 40%;
     border-radius: 20px;
+    padding-left:1rem;
+    padding-right:1rem;
+    padding-top:1rem;
+    line-height:1.2;
+    text-align:center;
 
     &-summary{
-        padding-left:1rem;
+      
+        line-height:1.2;
+        margin-top:0;
     }
 
     &-reclist{
         list-style: none;
+        text-align:left;
+        padding-left:.5rem;
+
+        &-p{
+            line-height: 1.2;
+            margin:0;
+            text-align: left;
+        }
 
         &--icon{
-            margin-right: 0.5rem;
+            margin-right:0.5rem;
+           
         }
     }
 
     &-reclistitem{
         padding-bottom:1rem;
+        display:flex;
+        align-items:baseline;
     }
 
     &-title {
@@ -63,14 +83,14 @@
       font-size: 36px;
       font-style: normal;
       font-weight: 500;
-      line-height: normal;
       padding-left:1rem;
+      margin:0;
     }
 
     &-container {
       margin-top: 2rem;
       display: flex;
-      justify-content: space-around;
+      justify-content: space-evenly;
       padding-bottom: 5rem;
     }
   }
