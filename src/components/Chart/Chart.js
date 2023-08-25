@@ -11,7 +11,7 @@ import {
 import { Bar } from "react-chartjs-2";
 import dataJson from "../../assets/data/user-consumption.json";
 import moment from "moment/moment";
-import "./Chart.scss"
+import "./Chart.scss";
 
 function Chart() {
 	ChartJS.register(
@@ -78,21 +78,21 @@ function Chart() {
 			},
 		},
 		responsive: true,
-        color:"white",
+		color: "white",
 		scales: {
 			x: {
 				stacked: true,
 				grid: {
 					display: false,
 				},
-                ticks: { color: 'white', beginAtZero: true }
+				ticks: { color: "white", beginAtZero: true },
 			},
 			y: {
 				stacked: true,
-                grid: {
+				grid: {
 					display: false,
 				},
-                ticks: { color: 'white', beginAtZero: true }
+				ticks: { color: "white", beginAtZero: true },
 			},
 		},
 		elements: {
@@ -107,10 +107,11 @@ function Chart() {
 	}
 
 	return (
-		<Bar
-			options={options}
-			data={chartData}
-		/>
+		<div className="chart-wrapper">
+			<div className="chart">
+				<Bar options={options} data={chartData} />
+			</div>
+		</div>
 	);
 }
 
