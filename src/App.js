@@ -1,13 +1,12 @@
 import "./App.css";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Charts from "./components/Chart/Chart";
-
+import MyInsights from "../src/pages/MyInsights/MyInsights";
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Charts/>}></Route>
+        <Route path="/" element={<MyInsights />}></Route>
       </Routes>
     </BrowserRouter>
   );
