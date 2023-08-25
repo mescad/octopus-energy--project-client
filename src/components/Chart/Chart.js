@@ -1,39 +1,52 @@
-import "./Chart.scss";
+import React, { useEffect, useState } from 'react';
 import {
   Chart as ChartJS,
   CategoryScale,
   LinearScale,
-  PointElement,
-  LineElement,
+  BarElement,
   Title,
   Tooltip,
-  Filler,
   Legend,
 } from 'chart.js';
-import { Chart, Line } from 'react-chartjs-2';
+import { Bar } from 'react-chartjs-2';
+import dataJson from "../../assets/data/user-consumption.json"
+import { useNavigate } from 'react-router';
 
-
-function Charts(){
+function Chart(){
     ChartJS.register(
       CategoryScale,
       LinearScale,
-      PointElement,
-      LineElement,
+      BarElement,
       Title,
       Tooltip,
-      Filler,
       Legend
     );
+
+    const [label, setLabel] = useState([]);
+
+    // useEffect(()=>{
+    //     const usages = dataJson.data.smartMeterTelemetry;
+    //     usages.forEach((usage)=>{
+    //         console.log(usage);
+    //         setLabel()
+    //     })
+    // },[])
+
     
     const options = {
-      responsive: true,
       plugins: {
-        legend: {
-          position: 'top',
-        },
         title: {
-          display: true,
-          text: 'Chart.js Line Chart',
+          display: false,
+        //   text: 'Chart.js Bar Chart - Stacked',
+        },
+      },
+      responsive: true,
+      scales: {
+        x: {
+          stacked: true,
+        },
+        y: {
+          stacked: true,
         },
       },
     };
@@ -44,23 +57,20 @@ function Charts(){
       labels,
       datasets: [
         {
-          fill: true,
-          label: 'Dataset 2',
-          data: [570, 600, 250, 800, 3242, 120, 500],
-          borderColor: 'rgb(53, 162, 235)',
-          backgroundColor: 'rgba(53, 162, 235, 0.5)',
+          label: 'Renewable Energy',
+          data: [345,23423,4545,123,5664,6234,444],
+          backgroundColor: '#F050F8',
         },
         {
-            fill: true,
-            label: 'Dataset 2',
-            data:  [560, 600, 250, 800, 5000, 500, 3000],
-            borderColor: 'rgb(53, 162, 235)',
-            backgroundColor: 'rgba(70, 152, 128, 0.5)',
-          }
+          label: 'Non-renewable Energy',
+          data: [345,23423,4545,123,5664,6234,444],
+          backgroundColor: '#600E6B',
+        }
       ],
     };
 
-    return (<Line options={options} data={data} />)
+    return <Bar options={options} data={data} />
+
 }
 
-export default Charts;
+export default Chart;
