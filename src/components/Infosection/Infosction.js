@@ -38,7 +38,7 @@ const Infosection = () => {
           <h3 className="infosection__vertbox-title">My Trends</h3>
           <p className="infosection__vertbox-info">+3%</p>
           <p className="infosection__vertbox-summary">
-            increase in Eco Usage since last month
+            increase in renewable energy usage since last month
           </p>
           <div className="infosection__vertbox-reclist-imagecontainer2">
           <img className="infosection__vertbox-reclist-icon2" src={elip} />

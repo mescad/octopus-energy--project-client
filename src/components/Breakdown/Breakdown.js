@@ -41,21 +41,21 @@ function Breakdown() {
         <section className="breakdown__chart">
           <div
             className="breakdown__renewable"
-            style={{ "--ren": `${renewable}%` }}
+            style={{ "--ren": `${nonRenewable}%` }}
           >
             <h2 className="breakdown__title-renewable"> RENEWABLE</h2>
             <div className="breakdown__renewable-chart">
-              <h3 className="breakdown__renewable-number">{renewable}% </h3>
+              <h3 className="breakdown__renewable-number">{nonRenewable}% </h3>
             </div>
           </div>
 
           <div
             className="breakdown__non"
-            style={{ "--non": `${nonRenewable}%` }}
+            style={{ "--non": `${renewable}%` }}
           >
             <h2 className="breakdown__title-non"> FOSSIL</h2>
             <div className="breakdown__non-chart">
-              <h3 className="breakdown__non-number">{nonRenewable}% </h3>
+              <h3 className="breakdown__non-number">{renewable}% </h3>
             </div>
           </div>
         </section>
