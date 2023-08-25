@@ -35,14 +35,15 @@ function Breakdown() {
   let nonRenewable = ((totalFossils / totalEnergy) * 100).toFixed(2);
 
   return (
-    <>
+    <div className="breakdown__wrapper">  
+    
       <article className="breakdown">
         <section className="breakdown__chart">
           <div
             className="breakdown__renewable"
             style={{ "--ren": `${renewable}%` }}
           >
-            <h2 className="breakdown__title-renewable"> Renewable</h2>
+            <h2 className="breakdown__title-renewable"> RENEWABLE</h2>
             <div className="breakdown__renewable-chart">
               <h3 className="breakdown__renewable-number">{renewable}% </h3>
             </div>
@@ -52,14 +53,14 @@ function Breakdown() {
             className="breakdown__non"
             style={{ "--non": `${nonRenewable}%` }}
           >
-            <h2 className="breakdown__title-non"> Fossil</h2>
+            <h2 className="breakdown__title-non"> FOSSIL</h2>
             <div className="breakdown__non-chart">
               <h3 className="breakdown__non-number">{nonRenewable}% </h3>
             </div>
           </div>
         </section>
       </article>
-    </>
+    </div>
   );
 }
 
