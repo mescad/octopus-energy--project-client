@@ -5,7 +5,7 @@
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
-  line-height: normal;
+  
 }
 
 @mixin graphpicker {
@@ -13,7 +13,7 @@
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
-  line-height: normal;
+  
 }
 
 @mixin graphxyaxis {
@@ -21,7 +21,7 @@ color: $ice;
 font-size: 12px;
 font-style: normal;
 font-weight: 400;
-line-height: normal;
+
 
 }
 
@@ -30,12 +30,12 @@ color: $ice;
 font-size: 14px;
 font-style: normal;
 font-weight: 500;
-line-height: normal;
+
 }
 
 @mixin elementsubtext {
 font-size: 12px;
 font-style: normal;
 font-weight: 400;
-line-height: normal;
+
 }
