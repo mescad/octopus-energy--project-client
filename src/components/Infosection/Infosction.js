@@ -13,12 +13,12 @@ const Infosection = () => {
           <ul className="infosection__vertbox-reclist">
             <li className="infosection__vertbox-reclistitem">
               <img className="infosection__vertbox-reclist--icon" src={fire} />
-              <p class="infosection__vertbox-reclist-p">Charge car overnight</p>
+              <p class="infosection__vertbox-reclist-p">Charge Tesla overnight to save £10</p>
             </li>
             <li className="infosection__vertbox-reclistitem">
               <img className="infosection__vertbox-reclist--icon" src={fire} />
               <p class="infosection__vertbox-reclist-p">
-                Wash Clothes at 30 degrees
+              Hang up clothes to dry to save 1.8kg of CO2
               </p>
             </li>
             <li className="infosection__vertbox-reclistitem">
