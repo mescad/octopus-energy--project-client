@@ -2,28 +2,76 @@
 @use "../../styles/mixins" as *;
 @use "../../styles/resets";
 
-.infosetion {
-    background-color: $siphon;
+.infosection {
+  background-color: $siphon;
+  color: $ice;
 
-    &_horozontalbox{
+  &__horozontalbox {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    background-color: #180048;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
-        &-textcontianer{
+    &-textcontianer {
+    }
+    padding-left: 1rem;
 
-        }
+    &-title {
+      @include elementsubtext;
+    }
 
-        &-title{
-            @include elementsubtext;
+    &-info {
+      @include elementtitle;
+    }
 
-        }
+   
 
-        &-info{
-            @include elementtitle;
+    &-arrow {
+    }
+  }
 
-        }
+  &__vertbox {
+    background-color: $hemocyanin;
+    width: 40%;
+    border-radius: 20px;
 
-        &-arrow{
+    &-summary{
+        padding-left:1rem;
+    }
 
+    &-reclist{
+        list-style: none;
+
+        &--icon{
+            margin-right: 0.5rem;
         }
     }
-}
 
+    &-reclistitem{
+        padding-bottom:1rem;
+    }
+
+    &-title {
+      padding-left: 1rem;
+    }
+
+    &-info {
+      color: #63e8b2;
+      font-size: 36px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      padding-left:1rem;
+    }
+
+    &-container {
+      margin-top: 2rem;
+      display: flex;
+      justify-content: space-around;
+      padding-bottom: 5rem;
+    }
+  }
+}
