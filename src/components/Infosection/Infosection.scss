@@ -1,0 +1,29 @@
+@use "../../styles/variables" as *;
+@use "../../styles/mixins" as *;
+@use "../../styles/resets";
+
+.infosetion {
+    background-color: $siphon;
+
+    &_horozontalbox{
+
+        &-textcontianer{
+
+        }
+
+        &-title{
+            @include elementsubtext;
+
+        }
+
+        &-info{
+            @include elementtitle;
+
+        }
+
+        &-arrow{
+
+        }
+    }
+}
+
