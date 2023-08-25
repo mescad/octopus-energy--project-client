@@ -12,7 +12,7 @@ const Infosection = () => {
           <h2 className="infosection__horozontalbox-info">Your Breakdown</h2>
         </div>
         <div className="infosection__horozontalbox-arrowcontainer">
-          <img classname="infosection__horozontalbox-arrow" src={arrow} />
+          <img className="infosection__horozontalbox-arrow" src={arrow} />
         </div>
       </div>
       <div className="infosection__vertbox-container">
