@@ -34,8 +34,9 @@ function Chart() {
 		usages.forEach((usage) => {
 			const thisTime = usage.readAt;
 			const consumptionDelta = usage.consumptionDelta;
-			const renewable = consumptionDelta * Number(usage.renewable);
-			const nonRenewable = consumptionDelta * Number(usage["non-renewable"]);
+			const renewable = (consumptionDelta * Number(usage.renewable)) / 1000;
+			const nonRenewable =
+				(consumptionDelta * Number(usage["non-renewable"])) / 1000;
 			const hour = moment(thisTime).hour();
 			const hourIndex = labels.indexOf(hour);
 			const labelLength = labels.length;
@@ -77,6 +78,7 @@ function Chart() {
 				display: false,
 			},
 		},
+		maintainAspectRatio: false,
 		responsive: true,
 		color: "white",
 		scales: {
@@ -85,14 +87,23 @@ function Chart() {
 				grid: {
 					display: false,
 				},
-				ticks: { color: "white", beginAtZero: true },
+				ticks: { color: "white", beginAtZero: true, maxRotation: 0 },
+				title: { display: true, text: "Hours", color: "white" },
 			},
 			y: {
 				stacked: true,
 				grid: {
 					display: false,
 				},
-				ticks: { color: "white", beginAtZero: true },
+				ticks: {
+					color: "white",
+					beginAtZero: true,
+					maxRotation: 0,
+					callback: (value, index, ticks) => {
+						return value + " kWh";
+					},
+				},
+				// title: { display: true, text: 'kWh', color: "white" },
 			},
 		},
 		elements: {
